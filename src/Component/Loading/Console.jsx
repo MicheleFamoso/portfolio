@@ -36,7 +36,7 @@ const Console = () => {
 
     lines.forEach((line) => {
       timeline.to(textRef.current, {
-        duration: 0.05,
+        duration: 0.02,
         onUpdate: () => {
           textRef.current.textContent += line + "\n";
           textRef.current.scrollTop = textRef.current.scrollHeight;
@@ -54,7 +54,7 @@ const Console = () => {
           className="btn-loading"
           disabled={isLoading}
         >
-          {isLoading ? "Caricamento..." : "Accedi"}
+          {isLoading ? "Caricamento..." : " [ Entra ]"}
         </button>
       </div>
     </div>
