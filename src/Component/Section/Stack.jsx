@@ -1,19 +1,27 @@
 const Stack = () => {
   return (
     <div className="section ">
-      <div className="stack-card">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-          veritatis? Molestiae modi facere perspiciatis esse sit inventore magni
-          accusantium veritatis voluptatum doloremque quas incidunt consectetur
-          non laboriosam saepe, soluta vitae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ipsa
-          explicabo quod cupiditate. Optio hic dolore perferendis veritatis
-          tempora animi dicta provident mollitia odit repellat voluptas,
-          assumenda deleniti. Maxime, itaque?
-        </p>
+      <div className="stack-layout">
+        <div className="stack-card">
+          <div>
+            <h2>Front end</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              molestiae deserunt architecto mollitia, enim ipsum esse.
+              Doloremque enim eos molestiae, quaerat corporis minus sit impedit.
+              Animi amet fugit nam aspernatur?
+            </p>
+          </div>
+          <div>
+            <h2>Back end</h2>
+          </div>
+          <div>
+            <h2>Database </h2>
+          </div>
+          <div>
+            <h2>Dev tools</h2>
+          </div>
+        </div>
       </div>
     </div>
   );
