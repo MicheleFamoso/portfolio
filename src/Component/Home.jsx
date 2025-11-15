@@ -2,6 +2,7 @@ import { Presentation } from "lucide-react";
 import Sidebar from "./Sidebar";
 import Presentazione from "./Section/Presentazione";
 import SidebarRight from "./SidebarRight";
+import Stack from "./Section/Stack";
 
 const Home = () => {
   return (
@@ -10,7 +11,9 @@ const Home = () => {
         <Sidebar />
       </div>
       <div className="section-layout">
+        <div class="bg-word">FULL STACK DEVELOPER</div>
         <Presentazione />
+        <Stack />
       </div>
       <div>
         <SidebarRight />

@@ -1,16 +1,11 @@
 const Presentazione = () => {
   return (
-    <div className="presentazione-layout">
-      <div>
-        <h2>Full stack &lt;/&gt;</h2>
-        <h1>Developer</h1>
-      </div>
-      <div>
-        <p>Ciao sono Michele Famoso,</p>
+    <div className=" presentazione-layout section">
+      <div className="presentazione-corpo">
+        <p>Ciao sono Michele Famoso.</p>
         <p>
-          la passione per la tecnologia mi accompagna dall’infanzia, dai primi
-          esperimenti con Linux alla programmazione. Oggi unisco logica e design
-          per creare esperienze digitali chiare e funzionali.
+          Sviluppatore web con una forte attenzione alla funzionalità, alla cura
+          del dettaglio e alla qualità del codice.
         </p>
       </div>
     </div>
