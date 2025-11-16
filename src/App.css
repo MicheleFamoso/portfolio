@@ -5,7 +5,7 @@
   --gray-bg: #ececec;
   --gray-line: #e6e6e6;
   --card-light: rgba(230, 230, 230, 0.3);
-  --dark-gray: #545454;
+  --dark-gray: rgba(84, 84, 84, 0.4);
   --font-header: "Google Sans Code", sans-serif;
   --font-body: "Inter", sans-serif;
   --primary-black: #333333;
@@ -160,6 +160,7 @@ sup {
   gap: 2rem;
   margin: 2rem;
 }
+
 @media (max-width: 600px) {
   .sideB-right {
     gap: 1rem;
@@ -169,6 +170,7 @@ sup {
 
 .sideB-right a {
   text-decoration: none;
+  color: var(--dark-gray);
 }
 
 .sideB-right a:hover {
@@ -254,11 +256,11 @@ sup {
 
 .Tittle {
   font-size: 1.6rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .stack-card img {
-  width: 50px;
+  width: 40px;
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
@@ -346,5 +348,102 @@ sup {
   .card-section {
     font-size: 0.6rem;
     gap: 0.6rem;
+  }
+}
+/* ------------------------------------------------- Progetti ----------------------------------------------------------------------*/
+.section-progetti {
+  padding: 2rem;
+}
+
+.card-progetti {
+  margin: 6rem;
+  background-color: var(--dark-gray);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 15px;
+  padding: 2rem;
+}
+.card-p-layout {
+  display: flex;
+}
+.video-wrapper {
+  width: fit-content;
+  padding: 3rem;
+}
+
+.video-wrapper video {
+  width: 90%;
+  border-radius: 15px;
+}
+.video-wrapper p {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: var(--font-header);
+  font-size: 1.6rem;
+  color: var(--primary-black);
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.video-wrapper p:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.lista-progetti {
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+.lista-progetti h3 {
+  cursor: pointer;
+  font-weight: 200;
+  color: var(--secondary-black);
+}
+
+.lista-progetti h3.active {
+  font-weight: 800;
+  color: var(--primary-black);
+}
+
+.lista-progetti h3:not(:first-of-type) {
+  margin-top: 1rem;
+}
+@media (max-width: 600px) {
+  .video-wrapper {
+    display: none;
+  }
+
+  .section-progetti {
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-progetti {
+    margin: 0rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--dark-gray);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 15px;
+    padding: 2rem;
+  }
+
+  .lista-progetti {
+    font-size: 1rem;
+  }
+
+  .lista-progetti h3 {
+    font-weight: 200;
+  }
+
+  .lista-progetti h3:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+  .lista-progetti {
+    padding-top: 3rem;
   }
 }
