@@ -362,38 +362,24 @@ sup {
   -webkit-backdrop-filter: blur(7px);
   border-radius: 15px;
   padding: 2rem;
+  height: fit-content;
 }
 .card-p-layout {
   display: flex;
 }
 .video-wrapper {
-  width: fit-content;
-  padding: 3rem;
+  width: 60%;
+  padding: 2rem;
 }
 
 .video-wrapper video {
-  width: 90%;
+  width: 100%;
   border-radius: 15px;
-}
-.video-wrapper p {
-  text-align: center;
-  margin-top: 2rem;
-  font-family: var(--font-header);
-  font-size: 1.6rem;
-  color: var(--primary-black);
-  font-weight: 300;
-
-  cursor: pointer;
-}
-
-.video-wrapper p:hover {
-  text-decoration: underline;
-  font-weight: 600;
 }
 
 .lista-progetti {
   font-size: 2rem;
-  padding-top: 3rem;
+  margin: auto;
 }
 .lista-progetti h3 {
   cursor: pointer;
@@ -409,6 +395,11 @@ sup {
 .lista-progetti h3:not(:first-of-type) {
   margin-top: 1rem;
 }
+
+span {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 600px) {
   .video-wrapper {
     display: none;
@@ -446,4 +437,78 @@ sup {
   .lista-progetti {
     padding-top: 3rem;
   }
+  span {
+    font-size: 0.7rem;
+  }
+}
+/* ------------------------------------------------- Dettagli Progetto ----------------------------------------------------------------------*/
+.layout-dettagli {
+  height: 100dvh;
+  background: var(--dark-gray);
+  display: flex;
+  padding: 2rem 0rem 2rem 2rem;
+  gap: 2rem;
+}
+.icon-dettagli {
+  color: var(--secondary-black);
+  cursor: pointer;
+}
+
+.icon-dettagli:hover {
+  color: var(--primary-black);
+}
+.section-dettagli-center {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  gap: 2rem;
+  width: fit-content;
+}
+
+.dettagli-video video {
+  width: 100%;
+}
+
+.dettagli-video {
+  width: 60%;
+}
+
+.section-dettagli-center-secondary video {
+  width: 100%;
+}
+.dettagli-video-mobile {
+  width: 90%;
+}
+
+.section-dettagli-center-secondary {
+  display: flex;
+  gap: 2rem;
+}
+.section-dettagli-center-secondary p {
+  font-family: var(--font-header);
+  color: var(--primary-black);
+  font-size: 1.7rem;
+}
+.section-dettagli-link {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.section-dettagli-link a:hover {
+  color: var(--primary-black);
+  font-weight: 600;
+}
+.section-dettagli-tertiary {
+  display: flex;
+  align-items: center;
+}
+
+.section-dettagli-card {
+  background-color: var(--gray-bg);
+
+  padding: 2rem;
+}
+
+.card-section img {
+  width: 50px;
 }

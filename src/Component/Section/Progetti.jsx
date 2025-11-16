@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Progetti = () => {
   const [activeProject, setActiveProject] = useState("haccp");
+  const navigate = useNavigate();
 
   const videos = {
     haccp: "/video/Kooha-2025-11-11-10-41-40.webm",
@@ -16,27 +18,33 @@ const Progetti = () => {
         <div className="card-p-layout">
           <div className="video-wrapper">
             <video src={videos[activeProject]} autoPlay muted loop />
-            <p>Dettagli</p>
           </div>
 
           <div className="lista-progetti">
             <h3
               className={activeProject === "haccp" ? "active" : ""}
               onMouseEnter={() => setActiveProject("haccp")}
+              onClick={() => navigate("/dHaccp")}
             >
-              d/Haccp
+              <span>01</span> d/Haccp
             </h3>
             <h3
               className={activeProject === "lux" ? "active" : ""}
               onMouseEnter={() => setActiveProject("lux")}
             >
-              Lux portfolio
+              <span>02</span> Lux portfolio
             </h3>
             <h3
               className={activeProject === "netflix" ? "active" : ""}
               onMouseEnter={() => setActiveProject("netflix")}
             >
-              Netflix Clone
+              <span>03</span> Netflix Clone
+            </h3>
+            <h3
+              className={activeProject === "netflix" ? "active" : ""}
+              onMouseEnter={() => setActiveProject("netflix")}
+            >
+              <span>04</span> Netflix Clone
             </h3>
           </div>
         </div>
