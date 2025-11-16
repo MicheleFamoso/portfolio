@@ -11,10 +11,18 @@ const Sidebar = () => {
           </button>
 
           <div className="nav-link">
-            <h3>Home</h3>
-            <h3>Progetti</h3>
-            <h3>Tecnologie</h3>
-            <h3>Contatti</h3>
+            <h3>
+              HOME<sup> 01</sup>
+            </h3>
+            <h3>
+              PROGETTI<sup> 02</sup>
+            </h3>
+            <h3>
+              TECNOLOGIE<sup> 03</sup>
+            </h3>
+            <h3>
+              CONTATTI<sup> 04</sup>
+            </h3>
           </div>
         </div>
       ) : (
