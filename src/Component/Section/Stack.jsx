@@ -3,7 +3,7 @@ const Stack = () => {
     <div id="stack" className="section ">
       <div className="stack-layout">
         <div>
-          <h2 className="Tittle">Stack tecnologico</h2>
+          <h2 className="Tittle">STACK TECNOLOGICO</h2>
           <div className="stack-card grid-4">
             <div className="">
               <h2 className="tittle-section">Front-end</h2>

@@ -13,39 +13,41 @@ const Progetti = () => {
 
   return (
     <div id="progetti" className="section section-progetti">
-      <h2 className="Tittle">Progetti</h2>
-      <div className="card-progetti">
-        <div className="card-p-layout">
-          <div className="video-wrapper">
-            <video src={videos[activeProject]} autoPlay muted loop />
-          </div>
+      <div className="card-tittle-progetti">
+        <h2>PROGETTI</h2>
+        <div className="card-progetti">
+          <div className="card-p-layout">
+            <div className="video-wrapper">
+              <video src={videos[activeProject]} autoPlay muted loop />
+            </div>
 
-          <div className="lista-progetti">
-            <h3
-              className={activeProject === "haccp" ? "active" : ""}
-              onMouseEnter={() => setActiveProject("haccp")}
-              onClick={() => navigate("/dHaccp")}
-            >
-              <span>01</span> d/Haccp
-            </h3>
-            <h3
-              className={activeProject === "lux" ? "active" : ""}
-              onMouseEnter={() => setActiveProject("lux")}
-            >
-              <span>02</span> Lux portfolio
-            </h3>
-            <h3
-              className={activeProject === "netflix" ? "active" : ""}
-              onMouseEnter={() => setActiveProject("netflix")}
-            >
-              <span>03</span> Netflix Clone
-            </h3>
-            <h3
-              className={activeProject === "netflix" ? "active" : ""}
-              onMouseEnter={() => setActiveProject("netflix")}
-            >
-              <span>04</span> Netflix Clone
-            </h3>
+            <div className="lista-progetti">
+              <h3
+                className={activeProject === "haccp" ? "active" : ""}
+                onMouseEnter={() => setActiveProject("haccp")}
+                onClick={() => navigate("/dHaccp")}
+              >
+                <span>01</span> d/Haccp
+              </h3>
+              <h3
+                className={activeProject === "lux" ? "active" : ""}
+                onMouseEnter={() => setActiveProject("lux")}
+              >
+                <span>02</span> Lux portfolio
+              </h3>
+              <h3
+                className={activeProject === "netflix" ? "active" : ""}
+                onMouseEnter={() => setActiveProject("netflix")}
+              >
+                <span>03</span> Netflix Clone
+              </h3>
+              <h3
+                className={activeProject === "netflix" ? "active" : ""}
+                onMouseEnter={() => setActiveProject("netflix")}
+              >
+                <span>04</span> Netflix Clone
+              </h3>
+            </div>
           </div>
         </div>
       </div>
