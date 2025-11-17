@@ -679,8 +679,8 @@ span {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   height: fit-content;
-  padding: 4rem 1rem;
-  width: 80%;
+  padding: 4rem 3rem;
+  width: 70%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -689,20 +689,23 @@ span {
 }
 
 .cv-about {
+  width: 10%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: flex-end;
 }
-.cv-about img {
-  width: 22%;
+
+.wrap-img {
+  width: 50%;
+}
+
+#icon-cv {
+  width: 90%;
 }
 
 .about {
-  padding-right: 6rem;
+  padding: 0 1rem;
 }
 
 .about h1 {
@@ -730,21 +733,101 @@ span {
 
 .contatti {
   display: flex;
-  flex-direction: column;
-  margin-top: 2.5rem;
-  align-items: flex-end;
-  margin-right: 1rem;
+  margin-top: 4rem;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
 
-.contatti p {
-  margin-top: 0.5rem;
-}
 .contatti a {
   text-decoration: none;
   color: var(--dark-gray);
+  width: fit-content;
 }
 
 .contatti a:hover {
   text-decoration: underline;
   color: var(--primary-black);
+}
+@media (max-width: 600px) {
+  .section-about {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .card-section-about {
+    background: var(--card-light);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    height: fit-content;
+    padding: 0;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .cv-about {
+    display: flex;
+
+    flex-direction: column;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+  .cv-about img {
+    width: 32%;
+  }
+
+  .wrap-img {
+    width: 60%;
+  }
+
+  #icon-cv {
+    display: none;
+  }
+
+  .about {
+    padding-right: 0rem;
+    padding: 1rem;
+  }
+
+  .about h1 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  .about p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: var(--font-header);
+    color: var(--secondary-black);
+  }
+  .about img {
+    width: 8%;
+    margin-left: 1rem;
+  }
+  .michelin {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1rem;
+  }
+
+  .contatti {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #a {
+    font-size: 0.7rem;
+  }
 }

@@ -3,12 +3,6 @@ const About = () => {
     <div id="contatti" className="section ">
       <div className="section-about">
         <div className="card-section-about">
-          <div className="cv-about">
-            <img src="/icon/cv_6588184.png" alt="cv-icon" />
-            <a href="/public/CV Michele Famoso.pdf" download>
-              Scariva cv
-            </a>
-          </div>
           <div className="about">
             <div className="michelin">
               <img src="/icon/MichelinStar.svg.png" alt="" />
@@ -34,13 +28,17 @@ const About = () => {
                   <a href="tel:3661213787">Telefono</a>
                 </p>
                 <p>
-                  <a href="tel:3661213787">Linkedin</a>
-                </p>
-                <p></p>
-                <p>
                   <a href="tel:3661213787">Github</a>
                 </p>
-                <p></p>
+              </div>
+              <div className="cv-about">
+                <div className="wrap-img">
+                  <img id="icon-cv" src="/icon/cv_6588184.png" alt="cv-icon" />
+                </div>
+
+                <a id="a" href="/public/CV Michele Famoso.pdf" download>
+                  Scariva cv
+                </a>
               </div>
             </div>
           </div>
