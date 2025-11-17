@@ -610,3 +610,22 @@ span {
     width: 20px;
   }
 }
+/* ------------------------------------------------- About ----------------------------------------------------------------------*/
+.section-about {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.card-section-about {
+  background: var(--card-light);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  height: fit-content;
+  padding: 2rem;
+  width: 80%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
