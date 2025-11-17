@@ -1,4 +1,3 @@
-import { Presentation } from "lucide-react";
 import Sidebar from "./Sidebar";
 import Presentazione from "./Section/Presentazione";
 import SidebarRight from "./SidebarRight";
@@ -9,21 +8,17 @@ import { useLocation } from "react-router-dom";
 import About from "./Section/About";
 
 const Home = () => {
-  const { hash } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    if (!hash) return;
-
-    const container = document.querySelector(".section-layout");
-    const el = document.querySelector(hash);
-
-    if (container && el) {
-      container.scrollTo({
-        top: el.offsetTop,
-        behavior: "smooth",
-      });
+    if (location.state?.scrollTo) {
+      const el = document.getElementById(location.state.scrollTo);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }, [hash]);
+  }, [location]);
+
   return (
     <div className="home-layout">
       <div>

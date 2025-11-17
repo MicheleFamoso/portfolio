@@ -84,10 +84,13 @@ body::-webkit-scrollbar {
 
 .nav-open {
   width: clamp(12rem, 24vw, 20rem);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-right: 2px solid var(--gray-line);
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  background-color: var(--gray-line);
+  background-color: var(--card-light);
   transition: width 0.6s ease;
 }
 .nav-close {
@@ -137,6 +140,23 @@ body::-webkit-scrollbar {
   margin: 5rem auto;
   gap: 1.3rem;
 }
+
+.nav-link h3 {
+  color: var(--dark-gray);
+}
+
+.nav-link h3:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-link h3.active-nav {
+  color: var(--primary-black);
+  font-weight: 500;
+  opacity: 1;
+  transform: translateX(4px);
+}
+
 sup {
   font-size: 1rem;
   vertical-align: super;
@@ -225,7 +245,7 @@ sup {
 
 .presentazione-corpo {
   width: 38dvw;
-  font-size: clamp(0.7rem, 2vw, 4rem);
+  font-size: clamp(0.7rem, 1.8vw, 4rem);
   color: var(--secondary-black);
   line-height: 140%;
   font-family: var(--font-header);
@@ -622,10 +642,71 @@ span {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   height: fit-content;
-  padding: 2rem;
+  padding: 8rem 2rem;
   width: 80%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+.cv-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cv-about img {
+  width: 22%;
+}
+
+.about {
+  padding-right: 6rem;
+}
+
+.about h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: var(--font-header);
+  color: var(--secondary-black);
+}
+.about img {
+  width: 3%;
+  margin-left: 1rem;
+}
+.michelin {
+  display: flex;
+  justify-content: end;
+}
+
+.contatti {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  align-items: flex-end;
+  margin-right: 1rem;
+}
+
+.contatti p {
+  margin-top: 0.5rem;
+}
+.contatti a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.contatti a:hover {
+  text-decoration: underline;
+  color: var(--primary-black);
 }

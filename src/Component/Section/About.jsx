@@ -1,26 +1,49 @@
 const About = () => {
   return (
-    <div className="section ">
+    <div id="contatti" className="section ">
       <div className="section-about">
         <div className="card-section-about">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            deleniti tempora possimus quasi sunt commodi veritatis officiis
-            sequi, neque laboriosam vitae ipsam pariatur non rerum voluptate
-            dignissimos nesciunt? Amet, quasi.
-          </h1>
-          <h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ut
-            error pariatur doloremque voluptates natus animi ratione esse
-            nesciunt consequuntur nobis alias, iure officia minus, temporibus
-            officiis quisquam est porro.
-          </h1>
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus,
-            commodi error voluptate repellendus sit voluptatem aspernatur
-            molestias reprehenderit odit alias facere eius, esse soluta quidem,
-            ipsa nesciunt praesentium a.
-          </h1>
+          <div className="cv-about">
+            <img src="/icon/cv_6588184.png" alt="cv-icon" />
+            <a href="/public/CV Michele Famoso.pdf" download>
+              Scariva cv
+            </a>
+          </div>
+          <div className="about">
+            <div className="michelin">
+              <img src="/icon/MichelinStar.svg.png" alt="" />
+              <img src="/icon/MichelinStar.svg.png" alt="" />
+              <img src="/icon/codes.png" alt="" />
+            </div>
+            <h1>Dalla padella al... Codice</h1>
+            <p>
+              In cucina ho imparato che l'eccellenza nasce dall'attenzione ai
+              dettagli e dalla capacità di trasformare ingredienti semplici in
+              esperienze memorabili. Poi ho scoperto la programmazione, e ho
+              capito che non era poi così diverso. Entrambi i mondi richiedono
+              le stesse qualità: problem-solving creativo, rigore
+              nell'esecuzione, capacità di lavorare in team e soprattutto la
+              determinazione a migliorare costantemente.
+            </p>
+            <div className="contatti">
+              <div>
+                <p>
+                  <a href="mailto:michelefamoso@gmail.com">Mail</a>
+                </p>
+                <p>
+                  <a href="tel:3661213787">Telefono</a>
+                </p>
+                <p>
+                  <a href="tel:3661213787">Linkedin</a>
+                </p>
+                <p></p>
+                <p>
+                  <a href="tel:3661213787">Github</a>
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

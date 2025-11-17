@@ -1,6 +1,6 @@
 const Presentazione = () => {
   return (
-    <div className=" presentazione-layout section">
+    <div id="home" className=" presentazione-layout section">
       <div className="presentazione-corpo">
         <p>Ciao sono Michele Famoso.</p>
         <p>

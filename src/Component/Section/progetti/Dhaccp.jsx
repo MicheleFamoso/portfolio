@@ -4,8 +4,8 @@ const Dhaccp = () => {
   const navigate = useNavigate();
   return (
     <div className="layout-dettagli">
-      <div class="bg-word">FULL STACK DEVELOPER</div>
-      <div onClick={() => navigate("/#progetti")}>
+      <div className="bg-word">FULL STACK DEVELOPER</div>
+      <div onClick={() => navigate("/", { state: { scrollTo: "progetti" } })}>
         <X size={40} strokeWidth={1.5} className="icon-dettagli" />
       </div>
       <div className="section-dettagli-center">

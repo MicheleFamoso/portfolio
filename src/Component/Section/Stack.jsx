@@ -1,6 +1,6 @@
 const Stack = () => {
   return (
-    <div className="section ">
+    <div id="stack" className="section ">
       <div className="stack-layout">
         <div>
           <h2 className="Tittle">Stack tecnologico</h2>
@@ -56,7 +56,7 @@ const Stack = () => {
                 <div className="card-section">
                   <img src="/icon/Spring.png" alt="" />
                   <p>Spring</p>
-                </div>{" "}
+                </div>
                 <div className="card-section">
                   <img src="/icon/api.png" alt="" />
                   <p>REST api</p>
