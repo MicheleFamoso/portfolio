@@ -12,7 +12,7 @@ const Progetti = () => {
   };
 
   return (
-    <div className="section section-progetti">
+    <div id="progetti" className="section section-progetti">
       <h2 className="Tittle">Progetti</h2>
       <div className="card-progetti">
         <div className="card-p-layout">

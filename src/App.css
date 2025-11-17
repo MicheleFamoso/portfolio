@@ -470,14 +470,14 @@ span {
 }
 
 .dettagli-video {
-  width: 60%;
+  width: 90%;
 }
 
 .section-dettagli-center-secondary video {
   width: 100%;
 }
 .dettagli-video-mobile {
-  width: 90%;
+  width: 100%;
 }
 
 .section-dettagli-center-secondary {
@@ -501,14 +501,112 @@ span {
 .section-dettagli-tertiary {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
-
+.section-dettagli-tertiary h1 {
+  font-size: 4rem;
+}
 .section-dettagli-card {
   background-color: var(--gray-bg);
+  margin-top: 8rem;
 
   padding: 2rem;
 }
 
+.section-dettagli-card h2 {
+  font-size: 2rem;
+}
+
 .card-section img {
-  width: 50px;
+  width: 40px;
+}
+@media (max-width: 600px) {
+  .layout-dettagli {
+    height: 100dvh;
+    background: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 1rem;
+    gap: 0rem;
+  }
+  .icon-dettagli {
+    color: var(--secondary-black);
+    cursor: pointer;
+    width: 70%;
+  }
+
+  .icon-dettagli:hover {
+    color: var(--primary-black);
+  }
+  .section-dettagli-center {
+    display: flex;
+    width: 100dvw;
+    margin-left: 0;
+    gap: 1rem;
+  }
+
+  .dettagli-video video {
+    width: 100%;
+  }
+
+  .dettagli-video {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .section-dettagli-center-secondary video {
+    width: 100%;
+  }
+  .dettagli-video-mobile {
+    width: 100%;
+  }
+
+  .section-dettagli-center-secondary {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .section-dettagli-center-secondary p {
+    font-family: var(--font-header);
+    color: var(--primary-black);
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+  .section-dettagli-link {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .section-dettagli-link a:hover {
+    color: var(--primary-black);
+    font-weight: 600;
+  }
+  .section-dettagli-tertiary {
+    display: flex;
+    width: 100dvw;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .section-dettagli-tertiary h1 {
+    font-size: 1.3rem;
+  }
+  .section-dettagli-card {
+    background-color: var(--gray-bg);
+    margin-top: 1rem;
+
+    padding: 1rem;
+  }
+
+  .section-dettagli-card h2 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .card-section img {
+    width: 20px;
+  }
 }
