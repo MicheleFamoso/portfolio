@@ -6,9 +6,10 @@ const Progetti = () => {
   const navigate = useNavigate();
 
   const videos = {
-    haccp: "/video/Kooha-2025-11-11-10-41-40.webm",
-    lux: "/video/lux.webm",
-    netflix: "/videos/netflix.mp4",
+    haccp: "/video/d_Haccp.mp4",
+    lux: "/video/lux.mp4",
+    netflix: "/video/Netflix.mp4",
+    medium: "/video/Medium.mp4",
   };
 
   return (
@@ -32,20 +33,23 @@ const Progetti = () => {
               <h3
                 className={activeProject === "lux" ? "active" : ""}
                 onMouseEnter={() => setActiveProject("lux")}
+                onClick={() => navigate("/lux")}
               >
                 <span>02</span> Lux portfolio
               </h3>
               <h3
                 className={activeProject === "netflix" ? "active" : ""}
                 onMouseEnter={() => setActiveProject("netflix")}
+                onClick={() => navigate("/netflix")}
               >
-                <span>03</span> Netflix Clone
+                <span>03</span> NetClone
               </h3>
               <h3
-                className={activeProject === "netflix" ? "active" : ""}
-                onMouseEnter={() => setActiveProject("netflix")}
+                className={activeProject === "medium" ? "active" : ""}
+                onMouseEnter={() => setActiveProject("medium")}
+                onClick={() => navigate("/medium")}
               >
-                <span>04</span> Netflix Clone
+                <span>04</span> Medium Clone
               </h3>
             </div>
           </div>

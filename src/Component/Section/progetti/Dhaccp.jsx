@@ -12,7 +12,7 @@ const Dhaccp = () => {
         <div className="dettagli-video">
           <h1 className="title-mobile">d/Haccp</h1>
           <video
-            src="/public/video/Kooha-2025-11-11-10-41-40.webm"
+            src="/public/video/d_Haccp.mp4"
             autoPlay
             muted
             loop
@@ -23,7 +23,7 @@ const Dhaccp = () => {
         <div className="section-dettagli-center-secondary">
           <div className="dettagli-video-mobile">
             <video
-              src="/public/video/dhaccpMobile.webm"
+              src="/public/video/d_Haccp_Mobile.mp4"
               autoPlay
               muted
               loop
@@ -32,18 +32,21 @@ const Dhaccp = () => {
           </div>
           <div className="section-dettagli-aside">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              sapiente ipsam reiciendis ad maxime magni, consectetur dicta,
-              earum corporis repudiandae molestias dolorum expedita, numquam
-              officia omnis perspiciatis optio laborum. Cupiditate!
+              d/Haccp è un’applicazione gestionale full-stack che rivoluziona i
+              controlli HACCP, portandoli dal cartaceo al digitale. Ideale per
+              ristoranti e aziende alimentari che vogliono semplificare la
+              gestione, ridurre gli errori e avere tutto sotto controllo,
+              ovunque. Vuoi vedere come funziona in dettaglio? Scopri il
+              progetto su{" "}
+              <a
+                target="_blank"
+                href="https://github.com/MicheleFamoso/d-haccp-v2"
+              >
+                GITHUB!
+              </a>
             </p>
             <div className="section-dettagli-link">
-              <a target="_blank" href="https://github.com/MicheleFamoso">
-                GITHUB
-              </a>
-              <a target="_blank" href="https://github.com/MicheleFamoso">
-                Live
-              </a>
+              <a target="_blank"></a>
             </div>
           </div>
         </div>
