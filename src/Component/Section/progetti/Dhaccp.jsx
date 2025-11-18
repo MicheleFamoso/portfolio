@@ -10,6 +10,7 @@ const Dhaccp = () => {
       </div>
       <div className="section-dettagli-center">
         <div className="dettagli-video">
+          <h1 className="title-mobile">d/Haccp</h1>
           <video
             src="/public/video/Kooha-2025-11-11-10-41-40.webm"
             autoPlay

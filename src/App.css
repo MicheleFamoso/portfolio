@@ -264,12 +264,11 @@ sup {
 .stack-card {
   background: var(--card-light);
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(3px);
   height: fit-content;
   padding: 3rem 3rem 5rem 3rem;
   border-radius: 15px;
   display: flex;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -337,7 +336,7 @@ sup {
   }
   .stack-card {
     background: var(--card-light);
-    height: 70dvh;
+    height: 60dvh;
     width: fit-content;
     overflow-y: auto;
     display: flex;
@@ -348,18 +347,19 @@ sup {
   }
 
   .Tittle {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 3rem;
   }
 
   .stack-card img {
-    width: 30px;
+    width: 40px;
   }
 
   .grid-4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
+    gap: 2.8rem;
     max-height: 80vh;
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -368,7 +368,7 @@ sup {
   .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2rem;
   }
   .card-section {
@@ -399,7 +399,7 @@ sup {
 .card-progetti {
   background-color: var(--card-light);
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(3px);
   border-radius: 15px;
   padding: 2rem;
   width: 70%;
@@ -473,8 +473,6 @@ span {
     width: fit-content;
     height: fit-content;
 
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
     border-radius: 15px;
     padding: 2rem;
   }
@@ -501,13 +499,14 @@ span {
 /* ------------------------------------------------- Dettagli Progetto ----------------------------------------------------------------------*/
 .layout-dettagli {
   height: 100dvh;
-  background: var(--dark-gray);
   display: flex;
-  padding: 2rem 0rem 2rem 2rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
   gap: 2rem;
 }
 .icon-dettagli {
-  color: var(--secondary-black);
+  color: var(--dark-gray);
   cursor: pointer;
 }
 
@@ -517,13 +516,14 @@ span {
 .section-dettagli-center {
   display: flex;
   flex-direction: column;
-  margin-left: 10rem;
+
   gap: 2rem;
-  width: fit-content;
+  width: 65%;
 }
 
 .dettagli-video video {
   width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
 }
 
 .dettagli-video {
@@ -532,6 +532,7 @@ span {
 
 .section-dettagli-center-secondary video {
   width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
 }
 .dettagli-video-mobile {
   width: 100%;
@@ -544,11 +545,15 @@ span {
 .section-dettagli-center-secondary p {
   font-family: var(--font-header);
   color: var(--primary-black);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-align: justify;
+  width: 86%;
 }
 .section-dettagli-link {
   margin-top: 1rem;
   display: flex;
+  font-size: 1.5rem;
   gap: 2rem;
 }
 .section-dettagli-link a:hover {
@@ -564,9 +569,12 @@ span {
   font-size: 4rem;
 }
 .section-dettagli-card {
-  background-color: var(--gray-bg);
+  background-color: var(--card-light);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 15px;
   margin-top: 8rem;
-
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 2rem;
 }
 
@@ -574,16 +582,18 @@ span {
   font-size: 2rem;
 }
 
+.title-mobile {
+  display: none;
+}
+
 .card-section img {
   width: 40px;
 }
 @media (max-width: 600px) {
   .layout-dettagli {
-    height: 100dvh;
-    background: var(--dark-gray);
+    height: 90dvh;
     display: flex;
     flex-direction: column;
-
     align-items: center;
     padding: 1rem;
     gap: 0rem;
@@ -601,7 +611,14 @@ span {
     display: flex;
     width: 100dvw;
     margin-left: 0;
+    margin: auto 0;
     gap: 1rem;
+  }
+  .title-mobile {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 
   .dettagli-video video {
@@ -609,15 +626,13 @@ span {
   }
 
   .dettagli-video {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 
-  .section-dettagli-center-secondary video {
-    width: 100%;
-  }
   .dettagli-video-mobile {
     width: 100%;
+    display: none;
   }
 
   .section-dettagli-center-secondary {
@@ -629,13 +644,17 @@ span {
     font-family: var(--font-header);
     color: var(--primary-black);
     font-size: 0.7rem;
-    line-height: 0.8rem;
+    line-height: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
   }
   .section-dettagli-link {
     margin-top: 0.5rem;
     display: flex;
     gap: 1rem;
     font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
   }
   .section-dettagli-link a:hover {
     color: var(--primary-black);
@@ -645,15 +664,19 @@ span {
     display: flex;
     width: 100dvw;
     flex-direction: row;
-    gap: 1rem;
-    padding: 0 1rem;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
   }
   .section-dettagli-tertiary h1 {
     font-size: 1.3rem;
+
+    display: none;
   }
   .section-dettagli-card {
-    background-color: var(--gray-bg);
-    margin-top: 1rem;
+    background-color: var(--card-light);
+    margin-top: 0.5rem;
 
     padding: 1rem;
   }
@@ -664,7 +687,7 @@ span {
   }
 
   .card-section img {
-    width: 20px;
+    width: 22px;
   }
 }
 /* ------------------------------------------------- About ----------------------------------------------------------------------*/
@@ -677,7 +700,7 @@ span {
 .card-section-about {
   background: var(--card-light);
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(3px);
   height: fit-content;
   padding: 4rem 3rem;
   width: 70%;
@@ -757,8 +780,7 @@ span {
 
   .card-section-about {
     background: var(--card-light);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+
     height: fit-content;
     padding: 0;
     width: 100%;
