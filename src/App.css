@@ -33,6 +33,11 @@ h5,
 h6 {
   font-family: var(--font-header);
   color: var(--secondary-black);
+  user-select: none;
+}
+
+p {
+  user-select: none;
 }
 
 /* ------------------------------------------------- Body ----------------------------------------------------------------------*/
