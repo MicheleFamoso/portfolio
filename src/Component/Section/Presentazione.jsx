@@ -4,8 +4,10 @@ const Presentazione = () => {
       <div className="presentazione-corpo">
         <p>Ciao sono Michele Famoso.</p>
         <p>
-          Sviluppatore web con una forte attenzione alla funzionalità, alla cura
-          del dettaglio e alla qualità del codice.
+          Sviluppo per il web mettendo al centro chi userà il prodotto. Ogni
+          scelta, dal layout al codice, deve rendere l’esperienza intuitiva,
+          semplice e affidabile. Perché la tecnologia migliore è quella che non
+          si fa notare.
         </p>
       </div>
     </div>

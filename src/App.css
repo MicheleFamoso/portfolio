@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
 .nav-close {
   transform: rotate(180deg);
   height: 100dvh;
-  width: clamp(1rem, 7vh, 3rem);
+  width: clamp(0.7rem, 7vh, 3rem);
   display: flex;
   transition: width 0.4s ease;
   flex-direction: column;
@@ -168,6 +168,9 @@ sup {
   sup {
     top: 0;
     font-size: 0.8rem;
+  }
+  .nav-close {
+    width: 70%;
   }
 }
 
@@ -532,7 +535,7 @@ span {
 
 .section-dettagli-center-secondary video {
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
 }
 .dettagli-video-mobile {
   width: 60%;
@@ -703,7 +706,7 @@ span {
   -webkit-backdrop-filter: blur(3px);
   height: fit-content;
   padding: 4rem 3rem;
-  width: 70%;
+  width: 60%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -720,7 +723,7 @@ span {
 }
 
 .wrap-img {
-  width: 50%;
+  width: 40%;
 }
 
 #icon-cv {
@@ -732,21 +735,21 @@ span {
 }
 
 .about h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
 }
 
 .about p {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
   text-align: justify;
   text-justify: inter-word;
   font-family: var(--font-header);
   color: var(--secondary-black);
 }
 .about img {
-  width: 3%;
+  width: 2%;
   margin-left: 1rem;
 }
 .michelin {

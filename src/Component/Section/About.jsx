@@ -11,13 +11,23 @@ const About = () => {
             </div>
             <h1>Dalla padella al... Codice</h1>
             <p>
-              In cucina ho imparato che l'eccellenza nasce dall'attenzione ai
-              dettagli e dalla capacità di trasformare ingredienti semplici in
-              esperienze memorabili. Poi ho scoperto la programmazione, e ho
-              capito che non era poi così diverso. Entrambi i mondi richiedono
-              le stesse qualità: problem-solving creativo, rigore
-              nell'esecuzione, capacità di lavorare in team e soprattutto la
-              determinazione a migliorare costantemente.
+              Per anni ho lavorato in ristoranti stellati, dove ogni piatto
+              nasceva da precisione millimetrica, timing perfetto e creatività
+              sotto pressione. In cucina ho imparato che l'eccellenza si
+              costruisce sui dettagli. <br />
+              <br /> Nel tempo libero programmavo, e ho scoperto qualcosa di
+              sorprendente: i due mondi si somigliavano più di quanto pensassi.
+              Entrambi richiedono problem-solving continuo, rigore
+              nell'esecuzione e una determinazione costante a migliorare.
+              <br />
+              <br />
+              La transizione non è stata semplice, ma la disciplina che mi ha
+              formato in cucina mi guida oggi nello sviluppo. Ogni riga di
+              codice è come un ingrediente: deve stare al posto giusto, al
+              momento giusto.
+              <br /> <br />
+              Ho cambiato strada, ma la passione è rimasta invariata: creare
+              qualcosa di speciale.
             </p>
             <div className="contatti">
               <div>
@@ -28,7 +38,7 @@ const About = () => {
                   <a href="tel:3661213787">Telefono</a>
                 </p>
                 <p>
-                  <a href="tel:3661213787">Github</a>
+                  <a href="https://github.com/MicheleFamoso">Github</a>
                 </p>
               </div>
               <div className="cv-about">

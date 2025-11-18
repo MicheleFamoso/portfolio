@@ -12,19 +12,13 @@ const Netflix = () => {
       <div className="section-dettagli-center">
         <div className="dettagli-video">
           <h1 className="title-mobile">NetClone</h1>
-          <video
-            src="/public/video/Netflix.mp4"
-            autoPlay
-            muted
-            loop
-            controls
-          ></video>
+          <video src="/video/Netflix.mp4" autoPlay muted loop controls></video>
         </div>
 
         <div className="section-dettagli-center-secondary">
           <div className="dettagli-video-mobile">
             <video
-              src="/public/video/Netflix_Mobile.mp4"
+              src="/video/Netflix_Mobile.mp4"
               autoPlay
               muted
               loop

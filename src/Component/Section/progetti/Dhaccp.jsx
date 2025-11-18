@@ -11,19 +11,13 @@ const Dhaccp = () => {
       <div className="section-dettagli-center">
         <div className="dettagli-video">
           <h1 className="title-mobile">d/Haccp</h1>
-          <video
-            src="/public/video/d_Haccp.mp4"
-            autoPlay
-            muted
-            loop
-            controls
-          ></video>
+          <video src="/video/d_Haccp.mp4" autoPlay muted loop controls></video>
         </div>
 
         <div className="section-dettagli-center-secondary">
           <div className="dettagli-video-mobile">
             <video
-              src="/public/video/d_Haccp_Mobile.mp4"
+              src="/video/d_Haccp_Mobile.mp4"
               autoPlay
               muted
               loop

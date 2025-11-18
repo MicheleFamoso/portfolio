@@ -12,19 +12,13 @@ const Medium = () => {
       <div className="section-dettagli-center">
         <div className="dettagli-video">
           <h1 className="title-mobile">MedClone</h1>
-          <video
-            src="/public/video/Medium.mp4"
-            autoPlay
-            muted
-            loop
-            controls
-          ></video>
+          <video src="/video/Medium.mp4" autoPlay muted loop controls></video>
         </div>
 
         <div className="section-dettagli-center-secondary">
           <div className="dettagli-video-mobile">
             <video
-              src="/public/video/Medium_Mobile.mp4"
+              src="/video/Medium_Mobile.mp4"
               autoPlay
               muted
               loop
@@ -33,15 +27,15 @@ const Medium = () => {
           </div>
           <div className="section-dettagli-aside">
             <p>
-              NetClone è un clone di Netflix completamente responsive — desktop,
-              tablet e mobile — sviluppato con Bootstrap e Sass. Recupera i
-              contenuti tramite un’API esterna e include una gestione degli
-              errori per le fetch, con messaggi chiari in caso di problemi,
-              garantendo un’esperienza d’uso sempre coerente e affidabile.
+              MediumClone è una replica semplice e responsive di Medium,
+              realizzata con HTML e CSS puri. Ricrea la struttura e lo stile
+              della piattaforma originale, adattandosi a qualsiasi dispositivo e
+              offrendo un’interfaccia pulita e leggibile. Realizzata per un
+              esercizio di progettazione front-end.
             </p>
             <div className="section-dettagli-link">
               <a
-                href="https://github.com/MicheleFamoso/NetflixClone"
+                href="https://github.com/MicheleFamoso/Medium-Clone"
                 target="_blank"
               >
                 GITHUB!
@@ -62,27 +56,6 @@ const Medium = () => {
             <div className="card-section">
               <img src="/icon/css-3.png" alt="" />
               <p> Css</p>
-            </div>
-            <div className="card-section">
-              <img src="/icon/bootstrap.png" alt="" />
-              <p> Bootstrap</p>
-            </div>
-            <div className="card-section">
-              <img src="/icon/sass.png" alt="" />
-              <p> Sass</p>
-            </div>
-            <div className="card-section">
-              <img src="/icon/java.png" alt="" />
-              <p> Javascript</p>
-            </div>
-            <div className="card-section">
-              <img src="/icon/sciene.png" alt="" />
-              <p> React</p>
-            </div>
-
-            <div className="card-section">
-              <img src="/icon/api.png" alt="" />
-              <p>REST api</p>
             </div>
           </div>
         </div>

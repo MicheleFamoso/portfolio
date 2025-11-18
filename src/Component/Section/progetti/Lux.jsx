@@ -13,19 +13,13 @@ const Lux = () => {
       <div className="section-dettagli-center">
         <div className="dettagli-video">
           <h1 className="title-mobile">Lux</h1>
-          <video
-            src="/public/video/lux.mp4"
-            autoPlay
-            muted
-            loop
-            controls
-          ></video>
+          <video src="/video/lux.mp4" autoPlay muted loop controls></video>
         </div>
 
         <div className="section-dettagli-center-secondary">
           <div className="dettagli-video-mobile">
             <video
-              src="/public/video/lux_Mobile.mp4"
+              src="/video/lux_Mobile.mp4"
               autoPlay
               muted
               loop
