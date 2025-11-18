@@ -46,7 +46,7 @@ const About = () => {
                   <img id="icon-cv" src="/icon/cv_6588184.png" alt="cv-icon" />
                 </div>
 
-                <a id="a" href="/public/CV Michele Famoso.pdf" download>
+                <a id="a" href="/CV Michele Famoso.pdf" download>
                   Scariva cv
                 </a>
               </div>
