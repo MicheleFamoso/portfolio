@@ -19,7 +19,13 @@ const Progetti = () => {
         <div className="card-progetti">
           <div className="card-p-layout">
             <div className="video-wrapper">
-              <video src={videos[activeProject]} autoPlay muted loop />
+              <video
+                src={videos[activeProject]}
+                autoPlay
+                muted
+                loop
+                preload="auto"
+              />
             </div>
 
             <div className="lista-progetti">
