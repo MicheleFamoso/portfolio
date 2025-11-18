@@ -6,10 +6,10 @@ const Progetti = () => {
   const navigate = useNavigate();
 
   const videos = {
-    haccp: "/video/d_Haccp.mp4",
-    lux: "/video/lux.mp4",
-    netflix: "/video/Netflix.mp4",
-    medium: "/video/Medium.mp4",
+    haccp: "/img/animation.gif",
+    lux: "/img/doc_2025-11-18_20-12-31.gif",
+    netflix: "/img/doc_2025-11-18_20-12-24.gif",
+    medium: "/img/doc_2025-11-18_20-12-10.gif",
   };
 
   return (
@@ -19,13 +19,7 @@ const Progetti = () => {
         <div className="card-progetti">
           <div className="card-p-layout">
             <div className="video-wrapper">
-              <video
-                src={videos[activeProject]}
-                autoPlay
-                muted
-                loop
-                preload="auto"
-              />
+              <img src={videos[activeProject]} alt="" />
             </div>
 
             <div className="lista-progetti">

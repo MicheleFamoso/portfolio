@@ -387,6 +387,8 @@ sup {
 /* ------------------------------------------------- Progetti ----------------------------------------------------------------------*/
 .section-progetti {
   padding: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .card-tittle-progetti {
   display: flex;
@@ -409,8 +411,8 @@ sup {
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 15px;
-  padding: 2rem;
-  width: 70%;
+  padding: 4rem 2rem;
+  width: 180%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .card-p-layout {
@@ -421,11 +423,11 @@ sup {
   width: 100%;
 }
 .video-wrapper {
-  width: 60%;
+  width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.video-wrapper video {
+.video-wrapper img {
   width: 100%;
   border-radius: 5px;
 }
@@ -437,6 +439,8 @@ sup {
   cursor: pointer;
   font-weight: 200;
   color: var(--secondary-black);
+  width: 100%;
+  white-space: nowrap;
 }
 
 .lista-progetti h3.active {
