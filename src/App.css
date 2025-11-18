@@ -97,7 +97,9 @@ body::-webkit-scrollbar {
   flex-direction: column;
   background-color: var(--card-light);
   transition: width 0.6s ease;
+  overflow: hidden;
 }
+
 .nav-close {
   transform: rotate(180deg);
   height: 100dvh;
